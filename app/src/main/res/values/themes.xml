@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Optimizer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+    </style>
+    <style name="Theme.Optimizer" parent="Base.Theme.Optimizer" />
+
+    <style name="DefaultTextViewStyle"><item name="android:fontFamily">@font/calibri</item></style>
+</resources>

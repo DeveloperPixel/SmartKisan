@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/DefaultTextStyle"
+    tools:context=".weathercheck">
+
+    <!-- Title Layout -->
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:contentDescription="back button"
+                android:background="@null"
+                android:padding="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="3dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/backButton" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_toStartOf="@+id/search_btn"
+                android:visibility="visible"
+                android:padding="2dp"
+                android:paddingLeft="3dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border"
+                android:hint="Enter City"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:contentDescription="search button"
+                android:background="@null"
+                android:padding="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Weather Condition Layout -->
+    <LinearLayout
+        android:id="@+id/weathercondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/title">
+
+        <TextView
+            android:id="@+id/cityCountryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City, Country"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/minTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min Temp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"/>
+
+            <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/weather_icon"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Weather icon"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/maxTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Max Temp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weatherTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather Type"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"/>
+    </LinearLayout>
+
+    <!-- ScrollView for Forecast -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weathercondition"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/weather_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695425466486",
+    "project_id": "sage-times",
+    "storage_bucket": "sage-times.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695425466486:android:b95981acf124ad9237df57",
+        "android_client_info": {
+          "package_name": "com.example.optimizer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxxnUHO0qmV135iVL6OK8avQ1bRCP-38o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

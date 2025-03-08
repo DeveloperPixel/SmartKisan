@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Smart Kisan</string>
+    <string name="welcome">Welcome</string>
+    <string name="let_s_get_started">Let\'s get started</string>
+    <string name="soil_analysis">Soil Analysis</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="moisture">Moisture</string>
+    <string name="dropdowninput">dropDownMenuExample</string>
+    <string name="let_s_join_the_community">Let\'s join the community</string>
+    <string-array name="languages">
+        <item>Sandy</item>
+        <item>Loamy</item>
+        <item>Clay</item>
+    </string-array>
+    <string name="low_moisture_level">Immediate irrigation advised to prevent yield loss.</string>
+    <string name="high_moisture_level">Implement drainage measures to prevent water-logging and root damage.</string>
+    <string name="low_humidity_level">Increase moisture levels to prevent crop dehydration.</string>
+    <string name="high_humidity_level">Implement ventilation measures to prevent mold and disease.</string>
+    <string name="low_temperature_level"> Provide additional insulation for plants to protect them from frost damage.</string>
+    <string name="high_temperature_level">Implement shading and irrigation to prevent heat stress in crops.</string>
+    <string name="weather_icon_desc">Weather icon</string>
+</resources>
